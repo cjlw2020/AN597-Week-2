@@ -132,4 +132,15 @@ DFm$V3 <- Fact
 levels(DFm$V3)[2] <- "cat"
 levels(DFm$V3)[1] <- "dog"
 
-# 
+# Alright this assignmet took me why too long
+# Problem 1: I had a hell of a time doing the first version setup moving R markdown files between local and remote systems. I ran into a few problems the really ended up being silly errors that took me hours to fix
+
+# Problem 2: Creating the string of Ulysses text took me a bit just becasue of getting famileru with the system
+
+# Problem 3: I have no idea if the i created the 4th dimential array correctly.I dont think so but i couldnt think or find another way
+
+# Problem 4: Same thing with the list. Honeslty have no clue if what i did is remotly close to what was suppose to happen. Too much time put into that lol
+
+# Problem 5: Reengineering the logical and factor columns from challenge 5 took me a while but i feel good about it. 
+
+# Hope i dont look like too much of a goon. I tried really hard. Thanks!
