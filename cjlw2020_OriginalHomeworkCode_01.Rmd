@@ -111,5 +111,25 @@ mat5 <- matrix(data = m5, nrow = 5, ncol = 3, byrow = TRUE)
 
 DFm <- as.data.frame(mat5)
 
+# Create varriable to convert column V2 into logical data set
 
+V2 <- as.logical(DFm$V2)
 
+# replace old V2 column with new logical data
+
+DFm$V2 <- V2
+
+# Convert column V3 to factor level
+
+Fact <- as.factor(DFm$V3)
+
+# Assign new level frame to Complete data frame
+
+DFm$V3 <- Fact
+
+# Assign name to level values. Yay!
+
+levels(DFm$V3)[2] <- "cat"
+levels(DFm$V3)[1] <- "dog"
+
+# 
