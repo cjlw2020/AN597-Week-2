@@ -55,5 +55,61 @@ x <- y[, c(2, 3, 6)]
 
 x <- y[c(6, 8),]
 
-# Extract elements from row 2, column 2 to row 6, column 9 and
+# Extract elements from row 2, column 2 and row 6, column 9. I couldnt figure out how to seperate out 66 and 14 from the code *
+
+x <- y[c(2, 6), c(2, 9)]
+
+# Create  4th dimentional array *
+
+a <- array(400:1, dim = c(5, 5, 4, 4))
+
+# a[1, 1, 1, 2] = 300
+# a[2, 3, 2, ] = 364 264 164 64
+# a[1:5, 1:5, 3, 3] = 
+#                  [,1] [,2] [,3] [,4] [,5]
+#            [1,]  150  145  140  135  130
+#            [2,]  149  144  139  134  129
+#            [3,]  148  143  138  133  128
+#            [4,]  147  142  137  132  127
+#            [5,]  146  141  136  131  126
+
+# Creaeted Unordered list of primates
+
+PTaxU <- list("Primates", "Haplorhini", "Anthropoidea", "Platyrrhini", "Cebidae", "Atelidae", "Pitheciidae", "Catarrhini", "Cercopithecidae", "Hylobatidae", "Hominidae", "Tarsioidea", "Tarsiidae", "Strepsirhini", "Lorisoidea", "Lorisidae", "Galagidae", "Lemuroidea", "Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae", "Daubentoniidae")
+
+# Create list for subsections of primate catagroies
+
+Platyrrhini <- list("Cebidae", "Atelidae", "Pitheciidae")
+
+Catarrhini <- list("Cercopithecidae", "Hylobatidae", "Hominidae")
+
+Lorisoidea <- list("Lorisidae", "Galagidae")
+
+Lemuroidea <- list("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae", "Daubentoniidae")
+
+Tarsioidea <- list("Tarsiidae")
+
+Anthropoidea <- list("Platyrrhini", "Catarrhini")
+
+Haplorhini <- list("Anthropoidea", "Tarsioidea")
+
+Strepsirhini <- list("Lorisoidea", "Lemuroidea")
+
+Primates <- list("Haplorhini", "Strepsirhini")
+
+# Compile primate lists: I am not confident about this at all
+
+OrderedPrimateList <- list("Primates", list(Primates), list(Haplorhini), list(Anthropoidea), list(Platyrrhini), list(Catarrhini), list(Tarsioidea), list(Strepsirhini), list(Lorisoidea), list(Lemuroidea))
+
+# Create number matrix for challenge 5 out of number vector
+
+m5 <- c( 3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2)
+
+mat5 <- matrix(data = m5, nrow = 5, ncol = 3, byrow = TRUE)
+
+# Convert matrix to data frame
+
+DFm <- as.data.frame(mat5)
+
+
 
